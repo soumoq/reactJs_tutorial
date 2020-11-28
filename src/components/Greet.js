@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-export const Greet = (props) => {
-    console.log(props);
+export const Greet = ({name,type,children}) => {
+
     return (
         <dif>
-            <h1>Hello {props.name} a.k.a {props.type}</h1>
-            {props.children}
+            <h1>Hello {name} a.k.a {type}</h1>
+            {children}
         </dif>
     )
 }
